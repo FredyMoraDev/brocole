@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Video Personalizado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <div class="video-container">
+        <div class="stars">
+            <div class="tpl-snow">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+               
+            </div>
+        </div>
+        <video id="miVideo" controls loop>
+            <source src="tu-video.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+        </video>
+     </div>
+    <script src="script.js"></script>
+    <script>
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            const numStars = 50; // Cantidad de estrellas
+    
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                starsContainer.appendChild(star);
+            }
+        }
+    
+        createStars();
+    </script>
+    
+</body>
+</html>
