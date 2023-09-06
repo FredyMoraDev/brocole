@@ -1,14 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:century gothic;
+    font-size: 17px;
     margin: 0;
-    padding: 0;
+    padding:  10% 0;;
     background-color: #000; /* Color negro de fondo */
-    color: #fff; /* Color de texto blanco, opcional */
+    color: #c0d692; /* Color de texto blanco, opcional */
 }
 
 .video-container {
+    display: flex;
     max-width: 300px;
     margin: 0 auto;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    z-index: 1;
+}
+#miVideo {
+    width: 100%; /* Ajusta el ancho del video según tu diseño */
+}
+
+.playlist {
+    list-style: georgian inside;
+    padding: 10;
+    margin: 10;
+    width: 70%; /* Ajusta el ancho de la lista según tu diseño */
+}
+
+.playlist-item {
+    display: flex;
+    background-color: #1c1f23; /* Color de fondo para los botones */
+    color: #d52828; /* Color de texto para los botones */
+    padding: 20px 30px;
+    margin: 40px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Efecto de transición al pasar el mouse */
+}
+.playlist-item img {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+.playlist-item:hover {
+    background-color: #8aafd5; /* Cambia el color al pasar el mouse */
 }
 
 video {
@@ -25,12 +57,24 @@ video {
     z-index: -1;
 }
 
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2; /* Ajusta la z-index para que las estrellas estén por encima del video */
+}
+
 .star {
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     background: #fff;
-    animation: twinkle 13s infinite;
+    animation: twinkle 5s infinite;
+    font-size: 3px;
+    z-index: 2; /* Ajusta la z-index para que las estrellas estén por encima del video */
 }
 
 @keyframes twinkle {

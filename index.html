@@ -12,30 +12,37 @@
    
 
     <div class="video-container">
-        <div class="stars">
-            <div class="tpl-snow">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-               
-            </div>
-        </div>
-        <video id="miVideo" controls loop>
+        <video id="miVideo" controls>
+            <source src="video1.mp4" type="video/mp4">
             <source src="tu-video.mp4" type="video/mp4">
             Tu navegador no admite el elemento de video.
         </video>
+        <ul class="playlist">
+            <li data-video="video1.mp4" class="playlist-item"> <img src="sable-de-luz.png" alt="Icono Video 1"> Video1</li>
+            <li data-video="tu-video.mp4" class="playlist-item"><img src="sable-de-luz.png" alt="Icono Video 2"> Video2</li>
+            
+            <!-- Agrega más elementos de lista para más videos -->
+        </ul>
      </div>
+     <div class="stars">
+        <div class="tpl-snow">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+           
+        </div>
+    </div>
     <script src="script.js"></script>
     <script>
         function createStars() {
