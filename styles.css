@@ -30,7 +30,7 @@ body {
     background-color: #1c1f23; /* Color de fondo para los botones */
     color: #d52828; /* Color de texto para los botones */
     padding: 20px 30px;
-    margin: 40px;
+    margin: 1px;
     border: none;
     border-radius: 10%;
     cursor: pointer;
