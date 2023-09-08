@@ -9,9 +9,10 @@ body {
 
 .video-container {
     display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     max-width: 300px;
-    margin: 0 auto;
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin: 0 auto; /* Margen automático horizontal para centrar */
     z-index: 1;
 }
 #miVideo {
@@ -19,18 +20,21 @@ body {
 }
 
 .playlist {
+    display: block;
+    text-align: center; /* Centra el contenido de la lista horizontalmente */
     list-style: georgian inside;
-    padding: 10;
-    margin: 10;
-    width: 70%; /* Ajusta el ancho de la lista según tu diseño */
+    padding: 10px;
+    margin: 0 auto; /* Margen automático horizontal para centrar */
+    width: 300px; /* Ajusta el ancho de la lista según tu diseño */
 }
 
 .playlist-item {
+    margin-top: 20px;
     display: flex;
     background-color: #1c1f23; /* Color de fondo para los botones */
     color: #d52828; /* Color de texto para los botones */
     padding: 20px 30px;
-    margin: 1px;
+    
     border: none;
     border-radius: 10%;
     cursor: pointer;
